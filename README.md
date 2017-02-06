@@ -1,2 +1,3 @@
 # Data science job project
-My target is to use beautifulsoup to crab data from the indeed website and generate a GUI with showing the analysis of Data science job
+Stage 1: Scrapping and cleaning the html file of Indeed website concerning data science job. (Finished)
+Stage 2: Creating a dynamic map to visualize distribution of job skills requirement. (Ongoing)
