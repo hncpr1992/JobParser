@@ -1,10 +1,8 @@
 library(ggplot2)
 library(scales)
+library(Hmisc)
+setwd("~/repo/JobParser/parser/user")
 jobData = read.csv("./data/jobFrame.csv",header = T)
+names(jobData)[2] = "c++"
 state = levels(jobData$state)
-
-stateData = jobData[jobData$state == " CA",-1]
-count = sort(colSums(stateData))
-plotData = data.frame("skill"=as.vector(count),"count"=names(count))
-
-ggplot(plotData, aes(x=count, y=skill)) + geom_bar(stat="identity")
+skill = names(jobData)[-1]

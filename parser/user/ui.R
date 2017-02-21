@@ -6,29 +6,20 @@ fluidPage(
   
   # Generate a row with a sidebar
   sidebarLayout(
-
-    # Define the sidebar with one input
     sidebarPanel(
-      selectInput("state", "State:",
+      
+      selectInput("skill", "Choose a skill:",
+                  choices = skill),
+      
+      selectInput("state", "Choose a state:",
                   choices=state),
-      hr(),
-      helpText("Data from Indeed website")
+    
+      helpText("The two sidebar will control the two barplot separatly")
     ),
-  # selectInput("State", "Choose a State:", 
-  #             choices=state),
-  # 
-  # selectInput("dataset", "Choose a dataset:", 
-  #             choices = c("rock", "pressure", "cars")),
-  # 
-  # helpText("Note: while the data view will show only the specified",
-  #          "number of observations, the summary will still be based",
-  #          "on the full dataset."),
-  # 
-  # submitButton("Update View")
     # Create a spot for the barplot
     mainPanel(
-      plotOutput("jobPlot")  
+      plotOutput("statePlot",width = "100%",height = "20%"),
+      plotOutput("skillPlot",width = "100%",height = "20%")
     )
-    
   )
 )
