@@ -1,4 +1,4 @@
-# Data science job project
+# Job Parser
 When I try to find a job as a data scientis, I feel that it should be made clear which skills and tools are the most important as an entry level data scientist. So I grab some data from Indeed and visulize it so that I can have a good view of the hottest skillsets <br>
 
 Stage 1: Scrapping and cleaning the html file of Indeed website concerning data science job. (Finished) <br>
