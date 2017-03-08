@@ -6,5 +6,5 @@ Stage 2: Creating a dynamic map to visualize distribution of job skills requirem
 More information and functions will be added later
 
 A simple app has been constructed. Will add more data and make the app better <br>
-<img src='app.png'>
+runGitHub( "<your repository name>", "<your user name>") 
 
