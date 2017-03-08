@@ -9,6 +9,7 @@ A simple app has been constructed. Will add more data and make the app better <b
 
 The app could be run by:
 
-> library(shiny)
-> runGitHub( "JobParser", "hncpr1992") 
-
+'''R
+library(shiny)
+runGitHub( "JobParser", "hncpr1992") 
+'''
