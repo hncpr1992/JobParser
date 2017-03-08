@@ -8,6 +8,10 @@ More information and functions will be added later
 A simple app has been constructed. Will add more data and make the app better <br>
 
 The app could be run by:
+```r
 library(shiny)
-runGitHub( "<your repository name>", "<your user name>") 
+runGitHub( "JobParser", "hncpr1992") 
+```
+
+<img src="app.png">
 
