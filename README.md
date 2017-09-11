@@ -48,7 +48,7 @@ n is the number of search pages you want to scrap, for example, if n = 10, you w
 10*10 = 100 jobs. Then, we get the job information data frame and could conduct analysis on it.
 Then sample data is like
 
-<img src="img/Sample_data.png">
+<img src="img/Smaple_data.png">
 
 The generated data is in the data/ directory
 
