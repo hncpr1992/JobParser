@@ -12,17 +12,17 @@ Then, we have understand the structure of Indeed website.<br>
 Indeed: https://www.indeed.com/<br>
 The starting page of Indeed is like:
 
-<img src="img/G1.png" height="400" width="1000">
+<img src="img/G1.png" height="400" width="1000" align="middle">
 
 We input the "Data Scientist" in the what frame and click "Find Jobs"<br>
 Then we can see the result page like
 
-<img src="img/G2.png" height="400" width="400">
+<img src="img/G2.png" height="400" width="400" align="middle">
 
 Each page includes 16 jobs. The top 3 and bottom 3 are sponsered jobs and are not what we are interested in.
 We will only scrap the 10 jobs in the middle.Further, we need to move from page 1 to page 2,3... to collect more information
 
-<img src="img/G3.png" height="150" width="600">
+<img src="img/G3.png" height="150" width="600" align="middle">
 
 ### 2. Developed the pipeline with webspiders
 In the web spider, we have achieved:
@@ -33,7 +33,7 @@ In the web spider, we have achieved:
 
 The pipeline is like:
 
-<img src="img/WF.png">
+<img src="img/WF.png" align="middle">
 
 To run the webspider, just invoke the terminal
 ```shell
@@ -48,7 +48,7 @@ n is the number of search pages you want to scrap, for example, if n = 10, you w
 10*10 = 100 jobs. Then, we get the job information data frame and could conduct analysis on it.
 Then sample data is like
 
-<img src="img/sample_data.png">
+<img src="img/sample_data.png" align="middle">
 
 The generated data is in the data/ directory
 
@@ -65,7 +65,7 @@ The app could be run by:
 library(shiny)
 runGitHub( "JobParser", "hncpr1992") 
 ```
-<img src="img/app.png">
+<img src="img/app.png" align="middle">
 
 From the image, we can see that the skill of Python programming is needed most in California, followed by Washington and New York. In the state of California, the most wanted and basic skills for a data scinetist is SQL, Python and R programming.
 The graphs is generated based on 500 recently posted data scientist jobs.
