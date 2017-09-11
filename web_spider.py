@@ -194,6 +194,8 @@ if __name__ == "__main__":
 	jobFrame = jobFrame.ix[["," in x for x in jobFrame["address"]],:]
 	jobFrame.rename(index=str, columns={"address": "state"},inplace=True)
 	jobFrame['state'] = jobFrame['state'].apply(lambda x: x.split(",")[1])
+	jobFrame = jobFrame.groupby("state").sum()
+	jobFrame.reset_index(level=0, inplace=True)
 	
 	# save the data from to jobFrame.csv
 	print("##################################")
