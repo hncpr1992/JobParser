@@ -20,8 +20,7 @@ Then we can see the result page like
 <img src="img/G2.png" height="400" width="400">
 
 Each page includes 16 jobs. The top 3 and bottom 3 are sponsered jobs and are not what we are interested in.
-We will only scrap the 10 jobs in the middle.<br>
-Further, we need to move from page 1 to page 2,3... to collect more information
+We will only scrap the 10 jobs in the middle.Further, we need to move from page 1 to page 2,3... to collect more information
 
 <img src="img/G3.png" height="150" width="600">
 
@@ -42,9 +41,7 @@ To run the webspider, just invoke the terminal and type the command line
 python web_spider.py n
 ```
 n is the number of search pages you want to scrap, for example, if n = 10, you will collect information of
-10*10 = 100 jobs
-
-Then, we get the job information data frame and could conduct analysis on it.
+10*10 = 100 jobs. Then, we get the job information data frame and could conduct analysis on it.
 
 ## R shiny visualization
 After get the data, I also built a small R shiny app. The app is simple but is interesting because I can use it to 
