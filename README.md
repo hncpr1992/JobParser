@@ -12,39 +12,46 @@ Then, we have understand the structure of Indeed website.<br>
 Indeed: https://www.indeed.com/<br>
 The starting page of Indeed is like:
 
-<img src="img/G1.png">
+<img src="img/G1.png" height="400" width="1000">
 
 We input the "Data Scientist" in the what frame and click "Find Jobs"<br>
 Then we can see the result page like
 
-<img src="img/G2.png">
+<img src="img/G2.png" height="400" width="400">
 
 Each page includes 16 jobs. The top 3 and bottom 3 are sponsered jobs and are not what we are interested in.
-We will only scrap the 10 jobs in the middle.<br>
-Further, we need to move from page 1 to page 2,3... to collect more information
+We will only scrap the 10 jobs in the middle.Further, we need to move from page 1 to page 2,3... to collect more information
 
-<img src="img/G3.png">
+<img src="img/G3.png" height="150" width="600">
 
 ### 2. Developed the pipeline with webspiders
 In the web spider, we have achieved:
 1. Collect the 10 jobs on each search page
 2. Move to folloing pages to collect more 10 job pages
 3. Collect the url of the 10 job webpages on each search page
-4. assemble all urls and start to collect job skills and location information on each page
+4. Assemble all urls and start to collect job skills and location information on each page
 
 The pipeline is like:
 
 <img src="img/WF.png">
 
-To run the webspider, just invoke the terminal and type the command line
+To run the webspider, just invoke the terminal
+```shell
+cd JobParser
+```
+Then type the command line
 
 ```python
 python web_spider.py n
 ```
 n is the number of search pages you want to scrap, for example, if n = 10, you will collect information of
-10*10 = 100 jobs
+10*10 = 100 jobs. Then, we get the job information data frame and could conduct analysis on it.
+Then sample data is like
 
-Then, we get the job information data frame and could conduct analysis on it.
+<img src="img/Sample_data.png">
+
+The generated data is in the data/ directory
+
 
 ## R shiny visualization
 After get the data, I also built a small R shiny app. The app is simple but is interesting because I can use it to 
