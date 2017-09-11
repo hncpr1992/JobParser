@@ -12,25 +12,25 @@ Then, we have understand the structure of Indeed website.<br>
 Indeed: https://www.indeed.com/<br>
 The starting page of Indeed is like:
 
-<img src="img/G1.png">
+<img src="img/G1.png" height="400" width="1000">
 
 We input the "Data Scientist" in the what frame and click "Find Jobs"<br>
 Then we can see the result page like
 
-<img src="img/G2.png">
+<img src="img/G2.png" height="400" width="400">
 
 Each page includes 16 jobs. The top 3 and bottom 3 are sponsered jobs and are not what we are interested in.
 We will only scrap the 10 jobs in the middle.<br>
 Further, we need to move from page 1 to page 2,3... to collect more information
 
-<img src="img/G3.png">
+<img src="img/G3.png" height="150" width="600">
 
 ### 2. Developed the pipeline with webspiders
 In the web spider, we have achieved:
 1. Collect the 10 jobs on each search page
 2. Move to folloing pages to collect more 10 job pages
 3. Collect the url of the 10 job webpages on each search page
-4. assemble all urls and start to collect job skills and location information on each page
+4. Assemble all urls and start to collect job skills and location information on each page
 
 The pipeline is like:
 
