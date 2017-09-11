@@ -1,6 +1,6 @@
 # Job Parser
 
-## Why this small project
+## Why did work on this project
 When I started to hunt for a data scientist job, I was a little confused about the requirements of the job skills for each job at different areas. They expected different skills of me. Are there any trend or pattern for skill requirements for each area?
 Then, I started to scrap the information of the job skills and correnspnding location, or state from the Indeed website, which is one of the biggest job post website.<br>
 
