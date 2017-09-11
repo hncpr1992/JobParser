@@ -35,13 +35,20 @@ The pipeline is like:
 
 <img src="img/WF.png">
 
-To run the webspider, just invoke the terminal and type the command line
+To run the webspider, just invoke the terminal
+```shell
+cd JobParser
+```
+Then type the command line
 
 ```python
 python web_spider.py n
 ```
 n is the number of search pages you want to scrap, for example, if n = 10, you will collect information of
 10*10 = 100 jobs. Then, we get the job information data frame and could conduct analysis on it.
+Then sample data is like
+<img src="img/Sample_data.png">
+
 
 ## R shiny visualization
 After get the data, I also built a small R shiny app. The app is simple but is interesting because I can use it to 
