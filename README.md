@@ -68,3 +68,4 @@ runGitHub( "JobParser", "hncpr1992")
 <img src="img/app.png">
 
 From the image, we can see that the skill of Python programming is needed most in California, followed by Washington and New York. In the state of California, the most wanted and basic skills for a data scinetist is SQL, Python and R programming.
+The graphs is generated based on 500 recently posted data scientist jobs.
