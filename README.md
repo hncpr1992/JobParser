@@ -48,7 +48,7 @@ n is the number of search pages you want to scrap, for example, if n = 10, you w
 10*10 = 100 jobs. Then, we get the job information data frame and could conduct analysis on it.
 Then sample data is like
 
-<img src="img/Smaple_data.png">
+<img src="img/sample_data.png">
 
 The generated data is in the data/ directory
 
@@ -65,6 +65,6 @@ The app could be run by:
 library(shiny)
 runGitHub( "JobParser", "hncpr1992") 
 ```
-
 <img src="img/app.png">
 
+From the image, we can see that the skill of Python programming is needed most in California, followed by Washington and New York. In the state of California, the most wanted and basic skills for a data scinetist is SQL, Python and R programming.
